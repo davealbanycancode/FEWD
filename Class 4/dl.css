@@ -1,0 +1,19 @@
+body {
+  font-family: arial, sans-serif;
+}
+h4 {
+  background-color:gray;
+  font-size: 20pt;
+  color: white;
+  padding: 5px;
+  border: solid black 3px;
+}
+dt {
+  font-weight: bold;
+}
+dd { 
+  color: blue;
+}
+dt.css {
+  color:red;
+}

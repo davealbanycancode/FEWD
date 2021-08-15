@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Linking with page</title>
+</head>
+<body>
+    <p><a href="#intro">Intro</a> &nbsp; &nbsp;
+        <a href="#element_ids">Element IDs</a>  &nbsp; &nbsp;
+        <a href="#hyperlinks">Linking to an element</a>
+     </p>
+ 
+
+
+  <h2 id="intro" >Introduction</h2>  
+  <p>If we add the <code>id</code> attribute to a tag, 
+    we can link directly to that element by using a 
+    relative url that includes the pound sign (&num;) 
+    followed by the element id.</p>
+
+    <br/>
+    <hr/>
+    <br/>
+
+    <h2 id="element_ids">Element IDs</h2>
+    <p>Add an id attribute to any element. 
+     If you want to link to that element, 
+     make sure the id is unique!</p>
+
+    <pre>&lt;h2 id=&quot;element_ids&quot;&gt; Element IDs&lt;/h2&gt;</pre>
+ 
+    <br/>
+    <hr/>
+    <br/>   
+    <h2 id="hyperlinks">Linking to an element</h2>
+    <p>Use a relative URL (no protocol or server name).
+    You don't need to even add a file name, just the 
+    id preceeded by &num;</p>
+    
+    <pre>&lt;a href="&num;intro"&gt;Intro&lt;/a&gt;</pre>
+    <pre>&lt;a href="&num;element_ids"&gt;Element IDs&lt;/a&gt;</pre>
+    <pre>&lt;a href="&num;hyperlinks"&gt;Linking to an element&lt;/a&gt;</pre>
+    
+    <p><a href="#intro">Intro</a> &nbsp; &nbsp;
+       <a href="#element_ids">Element IDs</a>  &nbsp; &nbsp;
+       <a href="#hyperlinks">Linking to an element</a>
+    </p>
+
+</body>
+</html>

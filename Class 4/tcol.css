@@ -1,0 +1,23 @@
+td {
+  border:  1px solid black;
+  font-family: Arial;
+  padding: 20px;
+  font-size: 14pt;
+  width: 50%;
+}
+.left {
+ border-right: solid gray 2px;
+}
+p {
+   font-size: 10pt;
+font-family: Times,serif;
+}
+.p1 {
+  margin-left: .5in;
+}
+.p2 {
+  margin-left: 1in;
+}
+.p3 {
+  margin-left: 1.5in;
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS Exercise</title>
+  <style>
+    body {
+      background-color:#cccccc;
+      margin: 0px;
+    }
+    /* Page div */
+    .page {
+      background-color:white;
+      width: 900px;
+      margin-top: 0px;
+
+      margin-left:auto;
+      margin-right:auto;
+      border-right: 1px solid black;
+      border-left: 1px solid black;
+      border-bottom: 1px solid black;
+      padding-bottom: .5in;
+    }
+    /* Heading centered */
+    h1 {
+      margin-top: 0px;
+      padding-top: 10px;
+      text-align:center;
+      font-family:Arial,sans-serif;
+    }
+    /* Subheading */
+    h2 {
+      text-align:center;
+      font-family:Arial,sans-serif;
+      font-style:italic;
+      font-size: 14pt;
+      color: gray;
+    }
+    hr {
+      width: 75%;
+      margin-bottom: .2in;
+    }
+    /* main table (page layout) */
+    #maintable {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Left Column table cell */
+    td.leftcol {
+
+      padding-left: 20px;
+      padding-right: 20px;
+      border-right: 2px solid gray;
+      vertical-align: top;
+    }
+    /* Right Column table cell */
+    td.rightcol {
+ 
+      padding-left: 20px;
+      padding-right: 20px;
+      vertical-align: top;
+    }
+    /* Tabe Head cells */
+    th {
+      font-family:Arial;
+      font-size: 14pt;
+      text-align: left;
+    }
+    .exhead {
+      padding-left: 10px;
+    }
+    /* property name cells */
+    .pname {
+      font-family:Arial, sans-serif;
+      font-size: 12px;
+    }
+    a { 
+      text-decoration:none;
+    }
+    /* CSS Example cells */
+    .example {
+      font-family: monospace;
+      padding-left: 10px;
+      font-size: 12px;
+    }
+
+    </style>
+</head>
+<body>
+  <div class='page'>
+  <h1>Some CSS Properties</h1>
+  <h2> Click on Property Names for MDN CSS Reference Page</h2>
+  <hr/>
+
+<table id='maintable'>
+  <tr>
+  <td class='leftcol'>
+  <table>
+    <tr>
+      <th>Property Name</th>
+      <th class='exhead'>Example</th>
+    </tr>
+    <tr>
+      <td class='pname'><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/background-color'>background-color</a></td>
+      <td class='example'>background-color: blue;</td>
+  </tr>
+  <tr>
+      <td class='pname'><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/border'>border</a></td>
+      <td class='example'>border: 1px solid black;</td>
+  </tr>
+  <tr>
+      <td class='pname'><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom'>border-bottom</a></td>
+      <td class='example'>border-bottom: medium outset purple;</td>
+  </tr>
+  <tr>
+      <td class='pname'><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/border-color'>border-color</a></td>
+      <td class='example'>border-color: #808080;</td>
+  </tr>
+  <tr>
+      <td class='pname'><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/border-left'>border-left</a></td>
+      <td class='example'>border-left: thin dashed rgb(100,255,255);</td>
+  </tr>
+  <tr>
+      <td class='pname'><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/border-right'>border-right</a></td>
+      <td class='example'>border-right: thick solid #456789;</td>
+  </tr>
+  <tr>
+      <td class='pname'><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/border-style'>border-style</a></td>
+      <td class='example'>border-style: dashed;</td>
+  </tr>
+  <tr>
+      <td class='pname'><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/border-top'>border-top</a></td>
+      <td class='example'>border-top: 3px dotted red;</td>
+  </tr>
+  <tr>
+      <td class='pname'><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/border-width'>border-width</a></td>
+      <td class='example'>border-width: 2px;</td>
+  </tr>
+  <tr>
+      <td class='pname'><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/color'>color</a></td>
+      <td class='example'>color: rgb(44%,82%,23%);</td>
+  </tr>
+  <tr>
+      <td class='pname'><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/font-family'>font-family</a></td>
+      <td class='example'>font-family: Arial, serif;</td>
+  </tr>
+  <tr>
+      <td class='pname'><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/font-size'>font-size</a></td>
+      <td class='example'>font-size: 12pt;</td>
+  </tr>
+  <tr>
+      <td class='pname'><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/font-style'>font-style</a></td>
+      <td class='example'>font-style: italic;</td>
+  </tr>
+  </table>
+
+</td><td class='rightcol'>
+
+  <table>
+    <tr>
+      <th>Property Name</th>
+      <th class='exhead'>Example</th>
+    </tr>
+
+    <tr>
+      <td class='pname'><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/height'>height</a></td>
+      <td class='example'>height: 2.6in;</td>
+  </tr>
+  <tr>
+      <td class='pname'><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/margin'>margin</a></td>
+      <td class='example'>margin: .25in;</td>
+  </tr>
+  <tr>
+      <td class='pname'><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/margin-bottom'>margin-bottom</a></td>
+      <td class='example'>margin-bottom: 1em;</td>
+  </tr>
+  <tr>
+      <td class='pname'><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/margin-left'>margin-left</a></td>
+      <td class='example'>margin-left: 1.2rem;</td>
+  </tr>
+  <tr>
+      <td class='pname'><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/margin-right'>margin-right</a></td>
+      <td class='example'>margin-right: 5%;</td>
+  </tr>
+  <tr>
+      <td class='pname'><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/margin-top'>margin-top</a></td>
+      <td class='example'>margin-top: 12px;</td>
+  </tr>
+  <tr>
+      <td class='pname'><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/padding'>padding</a></td>
+      <td class='example'>padding: 0;</td>
+  </tr>
+  <tr>
+      <td class='pname'><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/padding-bottom'>padding-bottom</a></td>
+      <td class='example'>padding-bottom: 3em;</td>
+  </tr>
+  <tr>
+      <td class='pname'><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/padding-left'>padding-left</a></td>
+      <td class='example'>padding-left: 18pt;</td>
+  </tr>
+  <tr>
+      <td class='pname'><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/padding-right'>padding-right</a></td>
+      <td class='example'>padding-right: 10%;</td>
+  </tr>
+  <tr>
+      <td class='pname'><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/padding-top'>padding-top</a></td>
+      <td class='example'>padding-top: 22px;</td>
+  </tr>
+  <tr>
+      <td class='pname'><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/text-align'>text-align</a></td>
+      <td class='example'>text-align: center;</td>
+  </tr>
+  <tr>
+      <td class='pname'><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/width'>width</a></td>
+      <td class='example'>width: 200px;</td>
+  </tr>
+  </table>
+
+</td></tr></table>
+</div>
+</body>
+</html>
