@@ -6,7 +6,7 @@
 </head>
 
 <body>
- 
+  <h3>Somewhat safe form handler</h3>
   <form action="http://fewd.hollingd.org" method="post">
     <p>Name: <input type="text" name="name"></p>
     <p>Enter your comments and click the submit button</p>
@@ -14,7 +14,14 @@
     <br/>
     <input type="submit">
   </form>
- 
+  <h3>Dangerous form handler</h3>
+  <form action="http://fewd.hollingd.org/danger.php" method="post">
+    <p>Name: <input type="text" name="name"></p>
+    <p>Enter your comments and click the submit button</p>
+    <textarea name="comments" rows="4" cols="50"></textarea>
+    <br/>
+    <input type="submit">
+  </form>
 </body>
 
 </html>
