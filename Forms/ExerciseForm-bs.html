@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Simple Login Form</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+  crossorigin="anonymous"> 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" 
+   crossorigin="anonymous"></script>
+
+<style>
+  body {
+    margin: .5in;
+  }
+</style>
+  </head>
+
+
+<body>
+  <br/><br/>
+
+  <form action="http://fewd.hollingd.org" method="post">
+    <table>
+      <tr>
+        <th>First Name:</th>
+        <td><input class="form-control" type="text" name="first"></td>
+      </tr>
+      <tr>
+        <th>Last Name:</th>
+        <td><input class="form-control" type="text" name="last"></td>
+      </tr>
+      <tr>
+        <th>Email:</th>
+        <td><input class="form-control" type="text" name="email"></td>
+      </tr>
+      <tr><td colspan="2">&nbsp;</td></tr>
+      <tr>
+        <th>Check all that apply:</th>
+        <td>I want more information 
+          <input  type="checkbox" name="info" value="1"><br/>
+          I want a quote 
+          <input type="checkbox" name="quote" value="1"><br/>
+          I want a to apply for financing
+          <input type="checkbox" name="finance" value="1"><br/>
+         </td>
+      </tr>
+      <tr><td colspan="2">&nbsp;</td></tr>
+      <tr>
+        <th>Which vehicle ?</th>
+        <td>The blue accord.
+          <input type="radio" name="car" value="accord"><br/>
+          The red SUV.
+          <input type="radio" name="car" value="suv"><br/>
+          The motorcycle.
+          <input type="radio" name="car" value="cycle">
+         </td>
+      </tr>
+    <tr><th></th><td><input type="submit"></td></tr>
+    <tr><th></th><td><input type="submit" value="Submit my info"></td></tr>
+    <tr><th></th><td><input type="submit" value="Enter me in your sweepstakes!"></td></tr>
+    
+  </form>
+
+</body>
+
+</html>
