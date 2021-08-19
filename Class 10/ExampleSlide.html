@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  padding: 20px;
+}
+h1 {
+  text-align:center;
+}
+.gitem {
+  border: 1px solid black;
+}
+.container { 
+  display:grid;
+  grid-template-columns: [first] 200px [second] 200px [third] auto [end]; 
+  grid-template-rows: [row1-start] 100px [row1-end]  150px [last-line]; 
+}
+#someelement {
+    grid-row: 1 / 1;
+    grid-column: first / third;
+}
+
+#another {
+    grid-row: row1-start / last-line;
+    grid-column: third;
+}
+
+
+
+</style>
+
+</head>
+<body>
+  <h1>Grid Example</h1>
+<div class="container">
+  <div id="someelement" class="gitem">I am someelement</div>
+  <div id="another" class="gitem">I am another</div>
+</div>
+
+</body>
+</html>

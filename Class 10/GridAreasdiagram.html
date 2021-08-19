@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+    }
+
+    .gitem {
+      border: 1px; solid black;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: [firstcol] 150px [secondcol] auto [thirdcol] 150px [endcol];
+      grid-template-rows: [headrow] 100px [contentrow] auto [footrow] 200px [endrow];
+      grid-template-areas: "logo head icons"
+        "leftbar content ads"
+        "leftbar foot foot";
+      width: 100vw;
+      height: 100vh;
+    }
+
+    #content {
+      padding: 20px;
+      grid-area: content;
+    }
+
+    #content a {
+      text-decoration: none;
+      color: black;
+    }
+
+
+    .leftbar a {
+      border: solid black 1px;
+      padding: 4px;
+      border-radius: 4px;
+      background-color: white;
+      color: #8899aa;
+      text-decoration: none;
+    }
+
+    .leftbar a:hover {
+      background-color: gray;
+      color: black;
+    }
+
+    #logo {
+      display: block;
+      background-color: #8899aa;
+      padding: 10px;
+      text-align: center;
+      grid-area: logo;
+      font-size: 20pt;
+      font-weight: 900;
+      background-color:yellow;
+    }
+
+    #solutions {
+      font-size: 12pt;
+      font-weight: normal;
+      color: white;
+    }
+
+    #pageheading {
+      grid-area: head;
+      background-color: #8899aa;
+      color: white;
+    }
+
+    #icons {
+      grid-area: icons;
+      background-color: white;
+      background-color: #8899aa;
+      text-align: center;
+      padding: 20px;
+      color: white;
+      font-weight: 600;
+      background-color:gray;
+    }
+
+    .leftbar {
+      background-color:green;
+      grid-area: leftbar;
+      padding: 2px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .ads {
+      background-color:red;
+      padding: 5px;
+      grid-area: ads;
+      display: flex;
+      flex-direction: column;
+
+    }
+    #foot {
+      background-color:blueviolet;
+      padding: 5px;
+      grid-area: foot;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div id='logo' class="gitem">
+    </div>
+    <div id='pageheading' class="gitem">
+    </div>
+
+    <div id='icons' class="gitem">
+    </div>
+
+    <div class='leftbar' class="gitem">
+    </div>
+
+    <div class='ads' class="gitem">
+    </div>
+
+
+    <div id='content' class="gitem">
+    </div>
+    <div id='foot' class="gitem"></div>
+  </div>
+</body>
+
+</html>

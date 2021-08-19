@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  padding: 20px;
+}
+h1 {
+  text-align:center;
+}
+.container { 
+  display:grid;
+  grid-template-columns: [first] 200px [second] 200px [third] auto [end]; 
+  grid-template-rows: [row1-start] 100px [row1-end]  150px [last-line]; 
+}
+
+#item1 {
+  background-image:url(puppy.jpg);
+  background-size:contain;
+  background-repeat:repeat-y;
+  grid-column-start: first;
+  grid-column-end: third;
+ 
+  grid-row: row1-start / span 2
+}
+
+#item2 {
+ padding: 20px;
+  grid-column-start: third;
+  grid-column-end: end;
+  grid-row-start: row1-end;
+  grid-row-end: third-line;
+ }
+#item3 {
+  grid-column-start: third;
+  grid-column-end: end;
+  grid-row-start: row1-start;
+  grid-row-end: row1-end;
+
+}
+
+.gitem{
+  border: 1px solid black;
+}
+
+#g1_1 {
+  grid-row:1;
+  grid-column:1;
+  background-color: green;
+}
+#g1_2 {
+  grid-row:1;
+  grid-column:2;
+  background-color: blue;
+}
+#g1_3 {
+  grid-row:1;
+  grid-column:3;
+  background-color: yellow;
+}
+#g2_1 {
+  grid-row:2;
+  grid-column:1;
+  background-color: red;
+}
+#g2_2 {
+  grid-row:2;
+  grid-column:2;
+  background-color: Purple;
+}
+
+#g2_3 {
+  grid-row:2;
+  grid-column:3;
+  background-color: pink;
+}
+
+.nav {
+  display:flex;
+  justify-content:space-evenly;
+}
+.nav a {
+  border: solid black 1px;
+  padding: 4px;
+  border-radius: 4px;
+  background-color:cadetblue;
+  text-decoration:none;
+}
+</style>
+
+</head>
+<body>
+  <h1>Grid Example</h1>
+<div class="container">
+  <div class="gitem">I am 1,1</div>
+  <div class="gitem">I am 1,2</div>
+  <div class="gitem">I am 1,3</div>
+  <div class="gitem">I am 2,1</div>
+  <div class="gitem">I am 2,2</div>
+  <div class="gitem">I am 2,3</div>
+ 
+</div>
+<br/><br/><hr/><br/><br/>
+<div class="container">
+ 
+  <div id="g1_3" class="gitem">I am 1,3</div>
+  <div id="g2_1" class="gitem">I am 2,1</div>
+  <div id="g2_2" class="gitem">I am 2,2</div>
+  <div id="g2_3" class="gitem">I am 2,3</div>
+  <div id="g1_1" class="gitem">I am 1,1</div>
+  <div id="g1_2" class="gitem">I am 1,2</div>
+</div>
+<br/><br/><hr/><br/><br/>
+
+
+
+
+<div class="container">
+  <div id="item1" class="gitem" >
+
+  </div>
+  <div id="item2" class="gitem">
+    <p>A Paragraph</p>
+    <p>Kind but courageous, friendly but dignified, the Bulldog is a thick-set, low-slung, well-muscled bruiser
+      whose 'sourmug' face is the universal symbol of courage and tenacity. These docile, loyal companions adapt
+      well to town or country.</p>
+    <p>You can't mistake a Bulldog for any other breed. The loose skin of the head, furrowed brow, pushed-in nose,
+      small ears, undershot jaw with hanging chops on either side, and the distinctive rolling gait all
+      practically scream 'I'm a Bulldog!' The coat, seen in a variety of colors and patterns, is short, smooth,
+      and glossy. Bulldogs can weigh up to 50 pounds, but that won't stop them from curling up in your lap, or at
+      least trying to. But don't mistake their easygoing ways for laziness'Bulldogs enjoy brisk walks and need
+      regular moderate exercise, along with a careful diet, to stay trim. Summer afternoons are best spent in an
+      air-conditioned room as a Bulldog's short snout can cause labored breathing in hot and humid weather.</p>
+  
+  </div>
+  <div id="item3" class="gitem">
+    <div class='nav'>
+      <a href="">Home</a>
+      <a href="">About us</a>
+      <a href="">Contact Us</a>
+    </div>
+</div>
+</body>
+</html>
