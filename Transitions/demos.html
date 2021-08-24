@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-family:arial;
+
+    }
+    .colordiv {
+      background-color: blue;
+      color:blue;
+      text-align:center;
+      font-size: 16pt;
+      vertical-align:middle;
+      width: 200px;
+      height: 200px;
+      transition: background-color 1s ease;
+
+    }
+    .colordiv:hover {
+      background-color:white;
+    }
+
+    .opacitydiv {
+      background-color:black;
+      opacity:.5;
+      color: white;
+      text-align:center;
+      font-size: 20pt;
+      vertical-align:middle;
+      width: 200px;
+      height: 200px;
+      transition: opacity 2s linear;
+
+    }
+    .opacitydiv:hover {
+      opacity:1.0;
+    }
+
+    .sizediv {
+      border: 2px dashed gray;
+      width: 200px;
+      height: 200px;
+      transition: width 1s ease;
+
+    }
+    .sizediv:hover {
+      width:400px;
+    }
+    .bolddiv {
+      border: 2px dashed gray;
+      width: 200px;
+      height: 200px;
+      transition: font-weight 1s ease, font-size 1s ease;
+      font-weight: 100;
+    }
+    .bolddiv:hover {
+      font-weight:900;
+      font-size: 200%;
+    }
+   
+    </style>
+
+</head>
+<body>
+  <h1 id='tdemos'>Transition Demos</h1>
+  <div class='colordiv'><br/><br/>
+    Color Change
+  </div>
+
+  <br/><br/><br/><br/>
+
+  <div class='opacitydiv'><br/><br/>
+    Opacity
+  </div>
+
+  <br/><br/><br/><br/>
+
+  <div class='sizediv'>
+    <p>Some paragraph with some text.
+ More text. Some paragraph with text.
+ More Text.</p>
+    </div>
+    <br/><br/><br/><br/>
+    <div class='bolddiv'>
+      <p>Some paragraph with some text.
+   More text. Some paragraph with text.
+   More Text.
+      </div>
+
+      <br/><br/><br/><br/>
+</body>
+</html>

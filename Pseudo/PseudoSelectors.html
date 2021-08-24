@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Selector Demo</title>
+  <style>
+    body {
+      font-family: arial, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    h1:hover {
+      color: blue;
+    }
+
+    table#users tr:nth-child(3) {
+      background-color: pink;
+    }
+    a:visited {
+      color:red;
+    }
+    p:first-letter {
+      font-size: 200%;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    button:hover {
+      background-color:gray;
+      color:white;
+    }
+    form {
+      border: 2px solid gray;
+      border-radius: 10px;
+      background-color: #e0e0e0;
+    }
+    input:required {
+      background-color:#f1a2a248;
+    }
+
+    input:checked {
+     
+      width:20px;
+      height:20px;
+
+    }
+
+    input:focus {
+      border: 12px solid green;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Pseudo Selector Demo</h1>
+
+  <table id='users'>
+
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+    </tr>
+    <tr>
+      <td>Joe Jones</td>
+      <td>jjones66@yahoo.com</td>
+      <td>(555) 718-2265</td>
+    </tr>
+    <tr>
+      <td>Mary Smith</td>
+      <td>msmith@gmail.com</td>
+      <td>(901) 250-3736</td>
+    </tr>
+    <tr>
+      <td>Alice Miller</td>
+      <td>miller@alice.com</td>
+      <td>(368) 163-3760
+      </td>
+    </tr>
+  </table>
+
+  <p>When in the Course of human events, it becomes necessary for one people to dissolve the political bands which have
+    connected with another, and to assume among the powers of the earth, the separate and equal station to which
+    the Laws of Nature and of Nature's God entitle them, a decent respect to the opinions of mankind requires that they
+    should declare the causes which impel them to the separation.</p>
+
+  <p>
+    The House of Representatives shall be composed of Members chosen every second Year by the People of the several
+    States, and the Electors in each State shall have the Qualifications requisite for Electors of the most numerous
+    Branch of the State Legislature.</p>
+
+    <h3>Some Hyperlinks:</h3>
+    <ul>
+    <li><a href="https://www.google.com">Google</a></li>
+    <li><a href="z">Never visited</a></li>
+    <li><a href="http://csszengarden.com">CSS Zen Garden</a></li>
+    </ul>
+
+    <button>Press Me!</button><br/><br/>
+
+    <form action="http://fewd.hollingd.org" method="post">
+      <table>
+        <tr>
+          <th>First Name:</th>
+          <td><input required type="text" name="first"></td>
+        </tr>
+        <tr>
+          <th>Last Name:</th>
+          <td><input type="text" name="last"></td>
+        </tr>
+        <tr>
+          <th>Email:</th>
+          <td><input type="text" name="email"></td>
+        </tr>
+        <tr><td colspan="2">&nbsp;</td></tr>
+        <tr>
+          <th>Check all the apply:</th>
+          <td>I want more information 
+            <input class='check' type="checkbox" name="info" value="1"><br/>
+            I want a quote 
+            <input type="checkbox" name="quote" value="1"><br/>
+            I want a to apply for financing
+            <input type="checkbox" name="finance" value="1"><br/>
+           </td>
+        </tr>
+        <tr><td colspan="2">&nbsp;</td></tr>
+        <tr>
+          <th>Which vehicle ?</th>
+          <td>The blue accord.
+            <input type="radio" name="car" value="accord"><br/>
+            The red SUV.
+            <input type="radio" name="car" value="suv"><br/>
+            The motorcycle.
+            <input type="radio" name="car" value="cycle">
+           </td>
+        </tr>
+      <tr><th></th><td><input type="submit"></td></tr>
+      <tr><th></th><td><input type="submit" value="Submit my info"></td></tr>
+      <tr><th></th><td><input type="submit" value="Enter me in your sweepstakes!"></td></tr>
+      
+    </form>
+
+
+</body>
+
+</html>

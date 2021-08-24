@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Media Query</title>
+  <style>
+    body {
+      margin-top: 0in;
+      font-family: arial;
+    }
+
+    #titlebar,#footer {
+      padding: 20px;
+      text-align: center;
+      background-color: #8899aa;
+      width: 100%;
+    }
+
+    .page {
+      display:flex;
+    }
+    .recipe {
+      width: 39%;
+      padding-left: .2in;
+    }
+    .content {
+      padding: 10px;
+      border-right: 2px solid gray;
+      font-size: 10pt;
+      width: 60%;
+      }
+
+
+    @media print {
+      #titlebar {
+        display: none;
+      }
+      #footer {
+        display: none;
+      }
+      .content, .recipe {
+        width: 100%;
+      }
+      .page {
+        display:block;
+      }
+   
+    }
+  </style>
+</head>
+
+<body>
+  <div id="titlebar">
+    <h2>Peach Cobbler Recipe</h2>
+  </div>
+
+  <div class="page">
+
+    <div class='content'>
+      <img style="float: left; margin-right: 20px" src="Cobbler2.jpg" width="120" />
+      <p>
+        This old fashioned Peach Cobbler recipe is not only extremely easy to
+        make from scratch, but it’s made with fresh or canned peaches so you can
+        enjoy it all year round! It’s one of my favorite family recipes from my
+        mom, and although I am bias, I think it’s the best of the best!
+      </p>
+      <p>
+        This old fashioned Peach Cobbler recipe is not only extremely easy to
+        make from scratch, but it’s made with fresh or canned peaches so you can
+        enjoy it all year round! It’s one of my favorite family recipes from my
+        mom, and although I am bias, I think it’s the best of the best!
+      </p>
+
+      <p style="float:left;">This old fashioned Peach Cobbler recipe is not only extremely easy to
+        make from scratch, but it’s made with fresh or canned peaches so you can
+        enjoy it all year round! It’s one of my favorite family recipes from my
+        mom, and although I am bias, I think it’s the best of the best!
+      </p>
+
+      <p style="float:right;"">
+      This old fashioned Peach Cobbler recipe is not only extremely easy to
+      make from scratch, but it’s made with fresh or canned peaches so you can
+      enjoy it all year round! It’s one of my favorite family recipes from my
+      mom, and although I am bias, I think it’s the best of the best!
+    </p>
+  </div>
+  <div class='recipe'>
+    <h4>Ingredients</h4>
+    <ul>
+      <li>1/2 cup butter</li>
+      <li>1 cup flour</li>
+      <li>1/4 tsp Salt</li>
+      <li>2 tsp. Baking Powder</li>
+      <li>2/3 cup milk</li>
+      <li>1 egg</li>
+      <li>1 can sliced peaches</li>
+      <li>1 cup sugar</li>
+      <li>1 tsp cinnamon</li>
+      <li>1/2 tsp nutmeg</li>
+    </ul>
+
+    <h4>Directions</h4>
+    <ol>
+      <li> Melt butter in a 9 x 13 inch pan.</li>
+      <li>Mix together flour, sugar, baking powder & salt.</li>
+      <li>Stir in milk & egg.</li>
+      <li>Pour evenly over melted butter.</li>
+      <li>Combine peaches, sugar & spices and spread over batter-DO NOT STIR!</li>
+      <li>Bake 35-45 minutes at 350°F until batter comes to the top and is golden brown.</li>
+    </ol>
+   </div>
+
+  </div>
+  <div id="footer">
+    Copyright 2021 - Cobbler Recipes Inc.
+  </div>
+</body>
+
+</html>

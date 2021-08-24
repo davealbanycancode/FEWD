@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Media Query</title>
+  <style>
+    body {
+      margin-top: 0in;
+      font-family: arial;
+    }
+    #titlebar {
+      padding: 20px;
+      display: flex;
+      background-color:#8899aa;   
+      align-items:top;
+      justify-content:space-between;
+      width: 100%;
+    }
+    
+    #logo, #icons {
+      flex-basis: 200px;
+    }
+
+    .leftbar {
+      padding: 2px;
+      background-color: #8899aa;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      flex-basis: 200px;
+    }
+
+    .leftbar a {
+      border: solid black 1px;
+      padding: 4px;
+      border-radius: 4px;
+      background-color: white;
+      color: #8899aa;
+      text-decoration: none;
+     
+    }
+
+    .leftbar a:hover {
+      background-color: gray;
+      color: black;
+    }
+.ads {
+      padding: 2px;
+      background-color: #8899aa;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      flex-basis: 200px;
+}
+
+    .content {
+      margin:.5in;
+    }
+    .page {
+      display:flex;
+
+    }
+  @media print {
+    #titlebar,.leftbar,.ads {
+      display:none;
+    }
+   #gimage {
+     width: 200px;
+   }
+  }
+   
+  </style>
+</head>
+
+<body>
+    <div id="titlebar">
+        <div id='logo'>
+          <span style="color:black;">G</span><span style="color:green;">r</span><span style="color:red;">i</span><span
+            style="color:yellow;">d</span><span id="solutions">Solutions</span>
+        </div>
+        <div id='pageheading'>
+          <h1>Grid for President 2022 <br /> Make Pages Great Again</h1>
+        </div>
+        <div id='icons'>
+          <img src='icons.png' width=80><br />
+          Account
+        </div>
+      </div>
+    <div class="page">
+   <div class='leftbar'>
+        <a href="home.html">Home</a>
+        <a href="about.html"> About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="map.html">Map & Directions</a>
+      </div>
+  
+  <div class='content'>
+    <img id='gimage' style="float:right;" src="grid-example.png" width=500>
+    
+    <h1>Basic Concepts of grid layout</h1>
+    <div>
+      <p><a href="/en-US/docs/Web/CSS/CSS_Grid_Layout">CSS Grid Layout</a> introduces a two-dimensional grid system
+        to CSS. Grids can be used to lay out major page areas or small user interface elements. This article
+        introduces the CSS Grid Layout and the new terminology that is part of the CSS Grid Layout Level 1
+        specification. The features shown in this overview will then be explained in greater detail in the rest of
+        this guide.</p>
+    </div>
+    <h2 id="what_is_a_grid"><a href="#what_is_a_grid" title="Permalink to What is a grid?">What is a grid?</a></h2>
+    <div>
+      <p>A grid is a set of intersecting horizontal and vertical lines defining columns and rows. Elements can be
+        placed onto the grid within these column and row lines. CSS grid layout has the following features:</p>
+    </div>
+    <h3 id="fixed_and_flexible_track_sizes"><a href="#fixed_and_flexible_track_sizes"
+        title="Permalink to Fixed and flexible track sizes">Fixed and flexible track sizes</a></h3>
+    <div>
+      <p>You can create a grid with fixed track sizes – using pixels for example. This sets the grid to the
+        specified pixel which fits to the layout you desire. You can also create a grid using flexible sizes with
+        percentages or with the new <code>fr</code> unit designed for this purpose.</p>
+    </div>
+    <h3 id="item_placement"><a href="#item_placement" title="Permalink to Item placement">Item placement</a></h3>
+
+    <div>
+      <img src="grid2.jpg" width=500 style="float:left;">
+      <p>You can place items into a precise location on the grid using line numbers, names or by targeting an area
+        of the grid. Grid also contains an algorithm to control the placement of items not given an explicit
+        position on the grid.</p>
+    </div>
+    <h3 id="creation_of_additional_tracks_to_hold_content"><a href="#creation_of_additional_tracks_to_hold_content"
+        title="Permalink to Creation of additional tracks to hold content">Creation of additional tracks to hold
+        content</a></h3>
+    <div>
+      <p>You can define an explicit grid with grid layout. The Grid Layout specification is flexible enough to add
+        additional rows and columns when needed. Features such as adding “as many columns that will fit into a
+        container” are included.</p>
+    </div>
+    <h3 id="alignment_control"><a href="#alignment_control" title="Permalink to Alignment control">Alignment
+        control</a></h3>
+    <div>
+      <p>Grid contains alignment features so we can control how the items align once placed into a grid area, and
+        how the entire grid is aligned.</p>
+    </div>
+  </div>
+  <div class='ads'>
+    <img src="ad1.PNG" width=130>
+    <img src="ad2.PNG" width=130>
+    <img src="ad3.PNG" width=130>
+  </div>
+</div>
+</body>
+
+</html>
