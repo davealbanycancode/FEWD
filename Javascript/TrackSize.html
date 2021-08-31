@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track Window Size</title>
+  <script>
+    function updateSize() {
+      var w = window.innerWidth;
+      var h = window.innerHeight;
+      document.getElementById('height').innerText = h;
+      document.getElementById('width').innerText = w; 
+    }
+    </script>
+</head>
+<body>
+  <table>
+    <tr>
+      <th>Height:</th>
+      <td id='height'></td>
+    </tr><tr>
+      <th>Width:</th>
+      <td id='width'></td>
+    </tr>
+  </table>
+  <script> 
+    /* Run updateSize every 1000 ms (1 second) */
+    window.setInterval("updateSize();",1000);
+    /* First update won't happen for 1 second, so run now as well */
+    updateSize();
+  </script>
+
+</body>
+</html>

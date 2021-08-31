@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>Size: <span id="count" ></span></p>
+  <script>
+    function changeParagraph() {
+       var e = document.getElementById("paragraph3");
+       e.innerHTML = e.innerHTML + " " + e.innerHTML;
+       c = document.querySelector("#count.cnt");
+       c.innerText = e.innerHTML.length;
+    }
+  
+
+  </script> 
+  <button onclick="changeParagraph();">Click Me</button>
+  <br/> <br/>
+  <p>Size: <span id="count" class="cnt"></span></p>
+  <p id="paragraph3"> Here is a paragraph</p>
+  <script>
+  
+ <script>
+  
+ </script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #paragraph3 {
+      transition: color 3s;
+    }
+    </style>
+ <script>
+    function makeBlue(id) {
+      elem = get(id);
+      elem.style.color="blue";
+      elem = get("status");
+      elem.innerHTML="Changing Color";
+      
+    }
+    function get(x) {
+      return(document.getElementById(x));
+    }
+    </script>
+</head>
+<body>
+  <p onclick="makeBlue('paragraph3');" id="paragraph3">Some Paragraph. Some Paragraph. Some Paragraph. Some Paragraph. 
+    Some Paragraph. Some Paragraph. 
+    Some Paragraph. Some Paragraph. 
+    Some Paragraph. Some Paragraph. 
+    Some Paragraph. Some Paragraph. 
+    Some Paragraph. Some Paragraph. 
+  </p>
+  <p id="status"></p>
+  <script>
+    document.write("<p>Hello</p>");
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <style>
+    #target {
+      width: 200px;
+      height: 200px;
+      position:absolute;
+      left: 0;
+      top: 0;
+      background-color:red; color:white; 
+      font-size: 24pt;
+    }
+  </style>
+  <script>
+  function done() {
+    stop=1;
+    window.alert("You win!");
+  }
+ // window.setInterval("jump();",1000);
+  function jump() {
+    var x = document.getElementById("target");
+    var w = window.outerWidth - 200;
+    var h = window.outerHeight - 200;
+    var t_left = Math.random()*w;
+    var t_top = Math.random()*h;
+    x.style.left=t_left + "px"
+    x.style.top=t_top + "px"
+   // alert(left + " " + top);
+  }
+  </script>
+</head>
+<body>
+  <div id="target" onClick="done();">Click Me</div>
+</body>
+</html>

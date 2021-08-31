@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swap</title>
+  <style>
+    .page {
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+  <script>
+    function swapImages() {
+      var im1 = document.querySelector("#img1");
+      var im2 = document.querySelector("#img2");
+      var src1 = im1.getAttribute("src");   
+      var src2 = im2.getAttribute("src");
+      im1.setAttribute("src",src2);
+      im2.setAttribute("src",src1);
+      
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <div class="page">
+    <img onclick="swapImages()" id="img1" src="https://www.cicis.com/wp-content/uploads/2019/02/pepperoni_pizza_3-4_c.png" width="400">
+    <img onclick="swapImages()" id="img2" src="https://moosetracks.com/wp-content/uploads/2019/04/bowl_chocolatemoosetracks-min-617x575.png"
+      width="400">
+  </div>
+
+</body>
+
+</html>

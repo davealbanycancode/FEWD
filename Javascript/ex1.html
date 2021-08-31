@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Play</title>
+</head>
+<body>
+  <button onclick="changeParagraph();">Click Me</button>
+  <p>Size is <span id="count"></span></p>
+   <p id="paragraph3">I am a paragraph</p>
+
+
+  <script>
+  function changeParagraph() {
+  var e = document.getElementById("paragraph3");
+   e.innerHTML = e.innerHTML + " " + e.innerHTML;
+   var cnt = document.getElementById("count");
+   cnt.innerHTML =  e.innerHTML.length;
+}
+
+  </script>
+  
+</body>
+</html>

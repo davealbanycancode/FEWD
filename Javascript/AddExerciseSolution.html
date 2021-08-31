@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Numbers</title>
+  <style>
+    * {
+      font-family:Arial, Helvetica, sans-serif;
+    }
+    div {
+      margin: .25in;
+    }
+    /* make number inputs small */
+    input {
+      width: 50px;
+    }
+    /* right align th */
+    th {
+      text-align:right;
+    }
+    td,th {
+      padding: 10px;
+    }
+    /* heading cell centered */
+    th.heading {
+      text-align:center;
+      background-color: #808080;
+      color: white;
+    }
+    /* put a border around the table */
+    table {
+      border: 2px solid black;
+      border-radius: 5px;
+    }
+    button {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p>Enter X and Y and click on Go</p> 
+    <table>
+      <tr><th class='heading' colspan='2'>Calculator</th></tr>
+      <tr>
+        <th>X:</th>
+        <td>
+            <input type="text" name="x">
+        </td>
+      </tr>
+      <tr>
+        <th>Y:</th>
+        <td>
+            <input type="text" name="y">
+        </td>
+      </tr>
+      <tr>
+        <th>Sum:</th>
+        <td>
+            <input type="text" name="sum" disabled>
+        </td>
+      </tr>
+      <tr><td colspan="2">
+        <button onclick="addem()">Go</button>
+      </td></tr>
+    </table>
+
+  </div>
+
+  <script>
+    function addem() {
+      var x = document.querySelector("[name='x']");
+      var y = document.querySelector("[name='y']");
+      var sum = parseInt(x.value)+ parseInt(y.value);
+      document.querySelector("[name='sum']").value=sum;
+    }
+  </script> 
+</body>
+</html>
